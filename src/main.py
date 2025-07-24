@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("an Amazing Weather Viewer")
+st.title("Amazing Weather Viewer")
 
 city = st.text_input("City name", "London")
 if st.button("Get weather"):
