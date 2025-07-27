@@ -3,7 +3,10 @@ import requests
 
 st.title("Amazing Weather Viewer")
 
-city = st.text_input("City name", "London")
+city_name = input('Enter a City name: ')
+
+
+city = st.text_input("City name", city_name)
 if st.button("Get a weather report"):
     # Demo REST call using a free placeholder API
     url = "https://jsonplaceholder.typicode.com/posts?userId=3"
